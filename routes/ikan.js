@@ -5,7 +5,8 @@ const Ikan = require('../models/Ikan')
 const verifyToken = require('../config/verifyToken')
 
 // Create 
-router.post('/', verifyToken, async(req, res) => {
+// verifyToken, 
+router.post('/', async(req, res) => {
     // tampung input ikan 
     const ikanPost = new Ikan({
         jenisIkan: req.body.jenisIkan,
